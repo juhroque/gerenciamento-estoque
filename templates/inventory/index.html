@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+
+    <title>Gerenciamento de Estoque</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-principal">Sistema de gerenciamento de estoque</h1>
+    </header>
+
+    <main>
+
+        <div class="consultas">
+            <h1 class="titulo-consultas">Consultas</h1>
+
+            <div class="card-pesquisa">
+                <form>
+                    <input type="text" class="buscar" placeholder="Palavra-chave">
+                    <button type='submit' class='botao-busca'>
+                        <img class='icone-busca'src="{% static 'assets/icon-search.png'%}">
+                    </button>    
+                </form>
+            </div> 
+            <div class="card-pesquisa">
+                
+                <p class="subtitulo-consultas">Filtrar por categoria</p>
+                <select class="select-categoria">
+                    <option>Categoria 1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+
+
+            </div>
+            
+        </div>
+
+        <table class="tabela">
+            <thead class="cabecalho-tabela">
+                <th>ID</th>
+                <th>NOME</th>
+                <th>CATEGORIA</th>
+                <th>PREÇO</th>
+                <th>QUANTIDADE</th>
+            </thead>
+
+            <tbody>
+                {% if rows %}
+                {% for row in rows %}
+                <tr>
+                    <td>{{row.id}}</td>
+                    <td>{{row.nome}}</td>
+                    <td>{{row.categoria}}</td>
+                    <td>{{row.preco}}</td>
+                    <td>{{row.quantidade}}</td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                {% endif %}
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="caixinha">
+            <p class="caixinha-conteudo">Júlia Roque Sistemas</p>
+        </div>
+        <img src="{% static 'assets/Vector.png'%}" class="ondinha">
+    </footer>
+</body>
+</html>

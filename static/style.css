@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    BORDER: 0;
+    background-color: #7F98E6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #384466;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+.titulo-principal {
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: white;
+    padding: 35px
+}
+
+main {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start
+}
+
+.consultas {
+    background-color: #B6C3EE;
+    border-radius: 15px;
+    padding: 20px 20px 0 20px;
+    width: 250px
+}
+
+.titulo-consultas {
+    font-size: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 3px solid grey;
+}
+
+.card-pesquisa {
+    background: #C7CFEA;
+    margin: 20px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subtitulo-consultas {
+    font-size: 14px
+}
+
+.buscar {
+    border: none;
+    background: #C7CFEA;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao-busca {
+    cursor:pointer;
+    border: none;
+    background: #C7CFEA;
+}
+
+.icone-busca {
+    height: 20px
+}
+
+.select-categoria {
+    border-radius: 5px;
+    background: #D9D9D9;
+}
+
+.tabela {
+    background: #aabdf5;
+    width: 880px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: 15px;
+    margin-bottom: 120px
+}
+
+
+th {
+    text-align: left;
+    padding: 10px 0 10px 10px;
+}
+
+tbody tr {
+    border-top: 1px solid #5a6586;
+}
+
+td {
+    padding: 7px 0 7px 10px;
+}
+
+footer {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.caixinha {
+    background-color: #aabdf5;
+    margin-top: 10px;
+    width: 80%;
+    position: absolute;
+    left: auto;
+    display: block;
+    left: 10%;
+    right: 10%;
+    border-radius: 15px;
+}
+
+.caixinha-conteudo {
+    padding-left: 20px;
+}
+
+.ondinha {
+    width: 100%;
+    position: absolute;
+}
+
